@@ -9,8 +9,11 @@ if(!sessionStorage.getItem("scoreO")){
 const gameBoard = document.querySelectorAll("#board > .square")
 const messageContainer = document.querySelector(".gameboard-display")
 const refreshBtn = document.createElement("button")
+const restartBtn = document.createElement("button")
 refreshBtn.classList.add("refresh-btn")
+restartBtn.classList.add("restart-btn")
 refreshBtn.innerText = "Play Again?"
+restartBtn.innerText="Start a New Game!"
 
 
 const Xplayer = document.querySelector("#x-player")
@@ -40,6 +43,13 @@ class Game {
         ]
         this.squaresAvailable = 9 
     }
+    reloadGame(){
+        sessionStorage.removeItem("name")
+        sessionStorage.removeItem("side")
+        sessionStorage.removeItem("scoreO")
+        sessionStorage.removeItem("scoreX")
+        location.reload()
+    }
     restartGame(){
         stopConfetti()
         location.reload()
@@ -66,7 +76,9 @@ class Game {
         }
         winner.classList.add("active-winner")   
         refreshBtn.addEventListener("click", this.restartGame)
+        restartBtn.addEventListener("click", this.reloadGame)
         winner.appendChild(refreshBtn)
+        winner.appendChild(restartBtn)
         messageContainer.appendChild(winner)
     }
     isTurn(){
