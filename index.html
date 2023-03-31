@@ -16,7 +16,7 @@
             <h1 id="title">TIC TAC TOE</h1>
         </div>
        <div class="player-column">
-            <h1 id="x-player">Player X</h1>
+            <p id="x-player">Player X</p>
             <p id="x-score">0</p>
        </div>
        <div class="gameboard-display">
@@ -33,12 +33,20 @@
              <button class="square" value ="7"></button>
              <button class="square" value="8"></button>
             </div>
+            <div id="opener">
+                <p>Enter your name and choose your side to begin!</p>
+                <input id ="opener-input" type="text" placeholder="Type your name here"/>
+                <div class="opener-btn-box">
+                <button class="opener-btn" value="X"> X </button>
+                <button class="opener-btn" value="O"> O </button>
+                </div>
+            </div>
        </div>
        <div class="player-column-2">
-        <h1 id="o-player">Player O</h1>
+        <p id="o-player">Player O</p>
         <p id="o-score">0</p>
        </div>
-    </div>
+        </div>
     <div class="confetti-holder"></div>
     <script src="js/Player.js"></script>
     <script src="js/confetti.js"></script>

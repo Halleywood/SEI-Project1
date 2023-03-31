@@ -22,8 +22,6 @@ const oScore = document.querySelector("#o-score")
 oScore.innerText = sessionStorage.getItem("scoreO")
 
 
-
-
 class Game {
     constructor(X, O){
         this.X = X
@@ -51,8 +49,17 @@ class Game {
         Oplayer.removeAttribute('id', "active")
         let winner = document.createElement("div")
         if(input){
+            console.log(input)
+            console.log(sessionStorage.getItem("name"))
+            console.log(sessionStorage.getItem("side"))
             startConfetti()
-            winner.innerText = `${input} is the winner!`
+            if(sessionStorage.getItem("side") == input){
+                let name = sessionStorage.getItem("name")
+                winner.innerText = `${name} is the winner!`
+            }
+            else{
+                winner.innerText = `${input} is the winner!`
+            }
         }
         else{
             winner.innerText ="Looks like we have a good ol' fashioned draw!"
@@ -61,8 +68,6 @@ class Game {
         refreshBtn.addEventListener("click", this.restartGame)
         winner.appendChild(refreshBtn)
         messageContainer.appendChild(winner)
-     
-        console.log(messageContainer)
     }
     isTurn(){
        if(this.X){
@@ -106,15 +111,22 @@ class Game {
         this.isTurn()
     }
 
-
-    createBoard(){
-     
-        Xplayer.setAttribute('id', "active")
-        Oplayer.removeAttribute('id', "active")
+    createBoard(input, sideChosen){
+        if(sideChosen == 'X'){
+            Xplayer.setAttribute('id', "active")  
+            Oplayer.removeAttribute('id', "active")
+            Xplayer.innerText = input
+        }
+        else{
+            Xplayer.removeAttribute('id', "active") 
+            Oplayer.setAttribute('id', "active")
+            Oplayer.innerText = input
+        }
         gameBoard.forEach(square=>{
             square.addEventListener("click", this.playedSquare, {once: true})
         })
     }
+   
     
     checkForWinner(input){
         return this.winningScoreCombinations.some(combo =>{
@@ -125,10 +137,55 @@ class Game {
     }
 }
 
+
+
 //*********************************************************************************SCRIPT LOGIC */
+const userInput = document.querySelector("#opener-input")
+const openerBtn = document.querySelectorAll(".opener-btn")
+const opener = document.querySelector("#opener")
 
-const newGame = new Game(true, false)
-newGame.createBoard()
+const getUserInput=(event)=>{
+    let newUser = userInput.value
+    let userSide = event.target.value
+    sessionStorage.setItem("name", newUser)
+    sessionStorage.setItem("side", userSide)
+    if(userSide == 'X'){
+        const newGame = new Game(true, false)
+        newGame.createBoard(newUser, userSide)
+        messageContainer.removeChild(opener)
+           
+    }
+    else{
+        const newGame = new Game(false, true)
+        newGame.createBoard(newUser, userSide)
+         messageContainer.removeChild(opener)
+    }
+}
+   // }
 
-//console.log(playerX)
-//console.log(playerO)
+
+
+const startGame =()=>{
+    if(sessionStorage.getItem("name") == null){
+        openerBtn.forEach((button)=>{
+            button.addEventListener("click", getUserInput)
+        })
+    }
+    else{ 
+        let user = sessionStorage.getItem("name")
+        let side = sessionStorage.getItem("side")
+        if(side == 'X'){
+            const sameGame = new Game ( true, false)
+            sameGame.createBoard(user, side)
+            messageContainer.removeChild(opener)
+        }
+        else{
+            const sameGame = new Game ( false, true)
+            sameGame.createBoard(user, side)
+            messageContainer.removeChild(opener)
+        }
+       
+    }
+}
+
+startGame();
