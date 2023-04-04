@@ -9,6 +9,14 @@
 * ⭕ Keep track of your score while playing and haave the option to save score without requiring sign in or database 
 
 
+
+
+
+![refactoringCode](https://user-images.githubusercontent.com/87944545/229692926-7da3bde3-92ec-4967-b227-1322944ab2a9.png)
+![refactoringCode2](https://user-images.githubusercontent.com/87944545/229692945-8cd2480c-e52b-4429-be33-16a8b90a36da.jpg)
+
+![timeline](https://user-images.githubusercontent.com/87944545/229692971-2dbb3691-4560-4661-a7ef-177d569be59e.jpg)
+
 ##Table of Contents:
 
 ####Learning Objectives 
@@ -32,13 +40,20 @@
           -The basic premise is to seperate how data is collected from users from how it is presented to users. It would not be as fun of a game if the user had to             click on the box and physically type their chosen character. But because we know their chosen character from the input we collected in the beginning, we can           dynamically render it on the square of their choosing with a click of a button. 
 
 #####The Process 
-        * Pseudocode --> Application  
+          Pseudocode --> Application  
+          * Utilized pen and paper, a dry erase board, and wireframe to write down logical steps to go from start to finish. I prioritized the JavaScript logic because            for me that was going to be the hardest, and because the logic is the backbone to the game. None of the Bronze MVP tasks could be completed without the game            logic. 
+          *I got the logic working, then built a skeleton of a website to make a clickeable prototype. Once I had all of the game logic down I could add more complex              features. 
         * WireFrame  --> 
+      
+        Skeleton --> 
         ![wireframe](https://user-images.githubusercontent.com/87944545/229692302-6307d3da-ec00-43a9-8c10-49650e50f35b.jpg)
         
-        Skeleton --> 
+        ![mobileresponsive](https://user-images.githubusercontent.com/87944545/229692871-7d68c9d5-2374-4cde-895f-43f92b49f19f.jpg)
+        ![screenshot](https://user-images.githubusercontent.com/87944545/229692960-c6c55bff-187a-4ec4-adc8-cf08bcd763c0.jpg)
+        Full Website--> 
+        [My Deployed Application](https://halleywood.github.io/SEI-Project1/)
         
-        Full Website 
+        ##MVP 
         🥉 Bronze MVP 
             *a user can click on a box and an X or O will appear 
             *two users play against eachother dynamically 
