@@ -34,10 +34,10 @@ Functional versus Class Based Code
      
 ![timeline](https://user-images.githubusercontent.com/87944545/229692971-2dbb3691-4560-4661-a7ef-177d569be59e.jpg)
 ##The Process 
-###### Pseudocode to  Application  
+####Pseudocode to  Application  
      * Utilized pen and paper, a dry erase board, and wireframe to write down logical steps to go from start to finish. I prioritized the JavaScript logic because            for me that was going to be the hardest, and because the logic is the backbone to the game. None of the Bronze MVP tasks could be completed without the game            logic. 
      * I got the logic working, then built a skeleton of a website to make a clickeable prototype. Once I had all of the game logic down I could add more complex              features. 
-###### WireFrame to Application  
+######WireFrame to Application  
        Wire Frame 
        Skeleton
         ![wireframe](https://user-images.githubusercontent.com/87944545/229692302-6307d3da-ec00-43a9-8c10-49650e50f35b.jpg)
