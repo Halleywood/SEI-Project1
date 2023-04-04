@@ -45,11 +45,12 @@ class Board {
     }
 
     itIsAWin(input) {
-        startConfetti()
+      
         messageBox.style.visibility = "visible"
         this.restartBtn.addEventListener("click", this.resetBoard.bind(this))
         messageContainer.style.opacity = "0.25"
         if (this.user.side == input) {
+            startConfetti()
             this.user.score++
             messageBox.innerText = `Congratulations ${this.user.name} you beat ${this.opponent.name} in ${9 - this.spacesAvailable} moves!`
         }
@@ -70,14 +71,19 @@ class Board {
     }
     //sets user turn to opposite, switches player turn indicator. 
     changeTurn() {
-        this.userTurn = !this.userTurn
-        if(this.userTurn){
-            this.displayName.classList.add('active')
-            this.opponentName.classList.remove('active')
+        if(this.spacesAvailable > 8){
+           this.displayName.classList.add('active')
         }
         else{
-            this.displayName.classList.remove('active')
-            this.opponentName.classList.add('active')
+            this.userTurn = !this.userTurn
+            if(this.userTurn){
+                this.displayName.classList.add('active')
+                this.opponentName.classList.remove('active')
+            }
+            else{
+                this.displayName.classList.remove('active')
+                this.opponentName.classList.add('active')
+            }
         }
     }
     //click event listener, takes the value from square, if its user turn will add user X or O...if not user's turn, will add opposite. 
@@ -109,15 +115,14 @@ class Board {
     createBoard() {
         messageBox.style.visibility = "hidden"
         messageContainer.style.opacity = "1"
+        this.changeTurn()
         this.board.forEach(square => {
             square.addEventListener("click", this.playedSquare.bind(this), { once: true })
         })
         this.displayName.innerText = this.user.name
-        this.displayName.classList.add('active')
         this.opponentName.innerText = this.opponent.name
         this.userScore.innerText = this.user.score
         this.opponentScore.innerText = this.opponent.score
-
     }
 
 
