@@ -38,39 +38,39 @@ body{
     filter: brightness(1.2);
 }
 /*****************************************************************************PLAYER COLUMNS*/
-.player-column{
+#player-column-X{
     grid-row: 2;
     grid-column: 1 /span 1;
-    font-size: 3.5vw;
 }
 
-.player-column-2{
+#player-column-O{
     grid-row: 2;
     grid-column: 5 /span 1;
-    font-size: 3.5vw;
 }
 
-.player-column{
+#player-X, #score-X{
     color:white;
 	-webkit-text-stroke: 1px #29FFFF;
 	-webkit-text-fill-color:#29FFFF;
     margin-left: 2rem;
+    font-size: 4vw;
 }
-#x-score, #o-score{
-    font-size: 6vw;
-    line-height:2vw;
-    color:white;
-    margin-top:25px;
-    padding:1rem;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.player-column-2{
+#player-O, #score-O{
     color:white;
 	-webkit-text-stroke: 1px #FD4270;
 	-webkit-text-fill-color:#FD4270;
     margin-right:2rem;
+    font-size: 4vw;
 }
-#active{
+
+#score-X, #score-O {
+    font-size: 6vw;
+    line-height:2vw;
+    margin-top:25px;
+    padding:1rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.active{
     border-radius:25px;
     border: 3px solid rgb(126, 0, 175);
     box-shadow: inset 0 0 2rem 0 rgb(110, 54, 194), 0 0 1rem rgb(154, 2, 255); 
@@ -121,15 +121,17 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
 }
 .square{
-    font-size:7.5rem;
+    font-size:7vw;
     background-color: rgb(17, 2, 11);
     border: none;
-    color:rgb(0, 0, 0);
+    color:rgb(226, 44, 44);
+}
+.X-color{
     text-shadow: 2px 1px 10px  rgb(72, 175, 248);
 	-webkit-text-stroke: 1px  rgb(12, 77, 123);
 	-webkit-text-fill-color: #29FFFF;
 }
-.opposite{
+.O-color{
     content:""; 
         text-shadow: 2px 1px 10px #fa42fd;
         -webkit-text-stroke: 1px #fd42fd;
@@ -182,41 +184,56 @@ body{
     z-index: 10000;
 }
 
-#opener{
+#start-game{
     position: absolute;
-    top: 0; 
-    right: -10px; 
+    top: 0%; 
+    right:0%; 
     height:100%;
-    width:90%;
+    width:100%;
     border-radius:25px;
     background: linear-gradient(0deg, rgb(0, 0, 0), rgb(89, 88, 88));
     border: 3px solid rgb(126, 0, 175);
     box-shadow: inset 0 0 2rem 0 rgb(110, 54, 194), 0 0 1rem rgb(154, 2, 255); 
-    padding:30px;
     align-items: center;
     justify-content: space-evenly;
     color:rgb(195, 195, 251); 
-    font-size:2.2rem;
+    font-size:1.8em;
     display: flex; 
     flex-direction: column; 
     justify-content: space-around;
 } 
-#opener > input{
+#start-game > p{
+    padding:1rem; 
+}
+#incorrect-input{
+    color: red;
+    line-height:4rem;
+    height:2rem;
+    padding:2rem;
+}
+#start-game > input{
     height: 8vh;
     width: 90%;
     border-radius:15px;
     font-size:1.8rem;
     padding:2px;
+    margin:10px;
     text-align: center;
     color: black;
     font-weight: bold;
     background-color: rgb(217, 216, 217);
 }
+
+#restart-btn{
+    width:300px; 
+    height: 100px; 
+}
 .opener-btn-box{
     display: flex;
     width:100%;
     justify-content: space-around;
-  
+    height:10vh;
+
 }
 .opener-btn{
     width:40%;
@@ -227,7 +244,31 @@ body{
     font-size: 2.6rem;
     vertical-align:center;
 }
-
+.restart-game{
+    position: absolute;
+    top: 30%; 
+    right: 22%; 
+    height:30%;
+    width:50%;
+    border-radius:25px;
+    background: linear-gradient(180deg, rgb(0, 0, 0), rgb(53, 36, 60));
+    border: 3px solid rgb(126, 0, 175);
+    box-shadow: inset 0 0 2rem 0 rgb(110, 54, 194), 0 0 1rem rgb(154, 2, 255); 
+    padding:30px;
+    align-items: center;
+    justify-content: space-evenly;
+    color:rgb(195, 195, 251); 
+    font-size:2.2rem;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-around;
+    display: flex;
+    visibility: hidden;
+}
+.restart-button{
+    width:200px; 
+    height:200px;
+}
 /*************************************************************************************MEDIA QUERIES!*/
 
 @media only screen and (max-width: 780px){
@@ -242,13 +283,13 @@ body{
         margin: 0;
     }
 
-    .player-column{
+    #player-column-X{
         grid-row: 3; 
         grid-column: 1/ span 2;
         font-size: 6vw;
     }
 
-    .player-column-2{
+    #player-column-O{
         grid-row: 3; 
         grid-column: 3 /span 2;
         font-size: 6vw;
@@ -274,8 +315,19 @@ body{
         font-size: 4rem;
       
     }
-    #o-score, #x-score{
+    #scoreX, #scoreO{
         font-size: 6vw;;
         margin: 0px;
+    }
+    .restart-game{
+        position:fixed;
+        width: 60vw;
+        height:40vh;
+        top:40%;
+        left:50%;
+        transform: translate(-50%, -50%);
+    }
+    #incorrect-input{
+        font-size:4.5vw;
     }
 }

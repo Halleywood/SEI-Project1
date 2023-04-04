@@ -52,16 +52,19 @@ class Game {
     }
     restartGame(){
         stopConfetti()
-        location.reload()
+        this.spacesAvailable = 9
+        gameBoard.forEach((square)=>{
+            square.innerText=''
+            square.removeEventListener("click", this.playedSquare, {once : true})
+            square.classList.remove('X-color')
+            square.classList.remove('O-color')
+        })  
     }
     endGame(input){
         Xplayer.removeAttribute('id', "active")
         Oplayer.removeAttribute('id', "active")
         let winner = document.createElement("div")
         if(input){
-            console.log(input)
-            console.log(sessionStorage.getItem("name"))
-            console.log(sessionStorage.getItem("side"))
             startConfetti()
             if(sessionStorage.getItem("side") == input){
                 let name = sessionStorage.getItem("name")
@@ -140,13 +143,7 @@ class Game {
     }
    
     
-    checkForWinner(input){
-        return this.winningScoreCombinations.some(combo =>{
-            return combo.every((index)=>{
-                return gameBoard[index].innerHTML == input
-            })
-        })
-    }
+
 }
 
 
