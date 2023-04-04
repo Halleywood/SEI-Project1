@@ -8,6 +8,7 @@
 * 🔵 Dynamically changes static HTML file using CSS and JavaScript for an interactive user experience  
 * 🟣 Keep track of your score while playing and haave the option to save score without requiring sign in or database 
 
+
 Table of Contents:
 
 -Learning Objectives 
@@ -34,5 +35,3 @@ Table of Contents:
     2. Strategies for Organization 
         *Model View Seperation 
         *Functional versus Class Based Code 
--
-
