@@ -8,32 +8,6 @@ const messageContainer = document.querySelector(".gameboard-display")
 const messageBox = document.querySelector(".restart-game")
 const restartBtn = document.querySelector(".restart-button")
 
-//a second confetti.js animation I have not gotten to work yet. Commenting out for later. 
-// const end = Date.now() + 6 * 1000;
-// const colors = ["#bb0000", "#ffffff", "#ff6600" ,"#ff00ff", "#ff3300", "#00ff66", "#00ffff", "#3112cd", "#00ffff", "#3112cd"];
-// function frame() {
-//     confetti({
-//         particleCount: 20,
-//         angle: 120,
-//         spread: 55,
-//         origin: { x: 1},
-//         colors: colors,
-//     });
-//     if (Date.now() < end) {
-//         requestAnimationFrame(frame);
-//     }
-//     confetti({
-//         particleCount: 20,
-//         angle: 120,
-//         spread: 55,
-//         origin: { x: 0},
-//         colors: colors,
-//     });
-//     if (Date.now() < end) {
-//         requestAnimationFrame(frame);
-//     }
-// }
-
 const startGame=(event)=>{
     let userName = userInput.value
     let userSide = event.target.value
@@ -58,14 +32,12 @@ const startGame=(event)=>{
         newBoard.createBoard()
         //takes down "start game" prompt
         messageContainer.removeChild(startGameWindow)
-
     }
     else{
         const incorrectInput = document.querySelector('#incorrect-input')
         incorrectInput.innerText = "Please enter a name!"
     }
 }
-
 //choosing an X or O will start the game --> Board.js
 startBtn.forEach((button)=>{
     button.addEventListener("click", startGame)

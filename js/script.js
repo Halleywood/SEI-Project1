@@ -1,11 +1,9 @@
-//*******************************************************************************PLAYER CLASS */
 if(!sessionStorage.getItem("scoreX")){
     sessionStorage.setItem("scoreX", 0)
 }
 if(!sessionStorage.getItem("scoreO")){
     sessionStorage.setItem("scoreO", 0)
 }
-
 const gameBoard = document.querySelectorAll("#board > .square")
 const messageContainer = document.querySelector(".gameboard-display")
 const refreshBtn = document.createElement("button")
@@ -15,7 +13,6 @@ restartBtn.classList.add("restart-btn")
 refreshBtn.innerText = "Play Again?"
 restartBtn.innerText="Start a New Game!"
 
-
 const Xplayer = document.querySelector("#x-player")
 const Oplayer = document.querySelector("#o-player")
 
@@ -23,7 +20,6 @@ const xScore = document.querySelector("#x-score")
 xScore.innerText = sessionStorage.getItem("scoreX")
 const oScore = document.querySelector("#o-score")
 oScore.innerText = sessionStorage.getItem("scoreO")
-
 
 class Game {
     constructor(X, O){
@@ -141,13 +137,7 @@ class Game {
             square.addEventListener("click", this.playedSquare, {once: true})
         })
     }
-   
-    
-
 }
-
-
-
 //*********************************************************************************SCRIPT LOGIC */
 const userInput = document.querySelector("#opener-input")
 const openerBtn = document.querySelectorAll(".opener-btn")
@@ -170,10 +160,6 @@ const getUserInput=(event)=>{
          messageContainer.removeChild(opener)
     }
 }
-   // }
-
-
-
 const startGame =()=>{
     if(sessionStorage.getItem("name") == null){
         openerBtn.forEach((button)=>{
@@ -196,5 +182,4 @@ const startGame =()=>{
        
     }
 }
-
 startGame();

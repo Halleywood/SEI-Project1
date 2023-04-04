@@ -1,6 +1,5 @@
 class Board {
     constructor(user, opponent) {
-        //keeping track of Players
         this.user = user
         this.opponent = opponent
         this.displayName = document.querySelector(`#player-${user.side}`)
@@ -22,7 +21,7 @@ class Board {
         this.userTurn = true
         this.restartBtn = document.querySelector('.restart-btn')
     }
-
+    //hides message box, resets score board count to 9, use forEach loop to remove all classes and event listeners. Queues createBoard() again. 
     resetBoard() {
         stopConfetti()
         messageBox.style.visibility = "hidden"
@@ -33,19 +32,17 @@ class Board {
             square.classList.remove('X-color')
             square.classList.remove('O-color')
         })
-
         this.createBoard()
     }
-
+    //displays different message, does not need click event input because not adding score. Same message box appears with option to reset game. 
     itIsADraw() {
         messageBox.style.visibility = "visible"
         messageBox.innerText = "Looks like we have a good ol' fashioned draw!"
         this.restartBtn.addEventListener("click", this.resetBoard.bind(this))
         messageBox.appendChild(this.restartBtn)
     }
-
+    //takes last click event square, if it = user icon, increases user score or vice versa. message box becomes visible stats who wins, restart btn to reset game. 
     itIsAWin(input) {
-      
         messageBox.style.visibility = "visible"
         this.restartBtn.addEventListener("click", this.resetBoard.bind(this))
         messageContainer.style.opacity = "0.25"
@@ -72,23 +69,23 @@ class Board {
     //if it is the start of game, sets the initial to user active and opponent inactive. 
     //sets user turn to opposite, switches player turn indicator. 
     changeTurn() {
-        if(this.spacesAvailable > 8){
-            if(this.userTurn){
+        if (this.spacesAvailable > 8) {
+            if (this.userTurn) {
                 this.displayName.classList.add('active')
                 this.opponentName.classList.remove('active')
             }
-            else{
+            else {
                 this.displayName.classList.remove('active')
                 this.opponentName.classList.add('active')
             }
         }
-        else{
+        else {
             this.userTurn = !this.userTurn
-            if(this.userTurn){
+            if (this.userTurn) {
                 this.displayName.classList.add('active')
                 this.opponentName.classList.remove('active')
             }
-            else{
+            else {
                 this.displayName.classList.remove('active')
                 this.opponentName.classList.add('active')
             }
@@ -118,8 +115,7 @@ class Board {
         }
         this.changeTurn()
     }
-
-    //calls this function in script.js, sets up board, display names, turn. First two lines are to remove reset window when starting another game 
+    //calls this function in script.js, sets up board, display names, turn() to determine which side gets active class. First two lines are to remove reset window when starting another game 
     createBoard() {
         messageBox.style.visibility = "hidden"
         messageContainer.style.opacity = "1"
@@ -132,6 +128,4 @@ class Board {
         this.userScore.innerText = this.user.score
         this.opponentScore.innerText = this.opponent.score
     }
-
-
 }

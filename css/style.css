@@ -118,7 +118,7 @@ body{
 #board{
     display: grid; 
     grid-gap:3px;
-    grid-auto-rows: minmax(170px, auto);
+    grid-auto-rows: minmax(200px, auto);
     grid-template-columns: 1fr 1fr 1fr;
 }
 .square{
