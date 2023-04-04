@@ -33,18 +33,18 @@
     WireFrame  -----> Skeleton ------> Full Website 
     ![wireframe](https://user-images.githubusercontent.com/87944545/229692302-6307d3da-ec00-43a9-8c10-49650e50f35b.jpg)
     ![mobileresponsive](https://user-images.githubusercontent.com/87944545/229692871-7d68c9d5-2374-4cde-895f-43f92b49f19f.jpg)
-        🥉 Bronze MVP 
+        *🥉 Bronze MVP 
             *a user can click on a box and an X or O will appear 
             *two users play against eachother dynamically 
             *a winner or draw can be determine and the game has a clear end 
             *Once an ending has been met, the user has the option to play again 
             *two users can keep track of their scores 
-         🥈 Silver MVP 
+         *🥈 Silver MVP 
             *The game is web responsive 
             *Players enter their names to start game 
             *A user can choose which team they want to be 
             *The game has animations 
-         🥇 Gold MVP
+         *🥇 Gold MVP
             *there is a dark/light theme 
             *have a website accessible to visually impared, for a user to be able to tabulate over gameboard
 
