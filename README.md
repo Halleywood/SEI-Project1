@@ -1,5 +1,5 @@
 # Tic-Tac-Toe Front-End Application 
-![screenshot of web application game board](../../../Desktop/SEIProject1PICS/screenshot.jpg "Visual of the game played on a browser")
+![screenshot](https://user-images.githubusercontent.com/87944545/229692960-c6c55bff-187a-4ec4-adc8-cf08bcd763c0.jpg)
 
 * ❌ Users can customize their names and choose their playing icon 
 * ⭕ Play unlimited games without having to refresh the browser 
@@ -31,6 +31,7 @@
 ### 3. **The Process** 
 **Pseudocode ----> Application**
 **WireFrame  -----> Skeleton ------> Full Website**
+    ![WIREFRAME1 BRONZE](https://user-images.githubusercontent.com/87944545/229829413-08df0118-dfbf-46cc-b416-1e6bf679ea75.jpg)
     ![wireframe](https://user-images.githubusercontent.com/87944545/229692302-6307d3da-ec00-43a9-8c10-49650e50f35b.jpg)
     ![mobileresponsive](https://user-images.githubusercontent.com/87944545/229692871-7d68c9d5-2374-4cde-895f-43f92b49f19f.jpg)
 
@@ -61,7 +62,7 @@
     [GitHub Tutorial](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
     -Just fork this repository into your own GitHub account, clone the code, and run your index file from the code editor of your choice! 
 3. Sources 
-
+MVC image: https://blog.sessionstack.com/how-javascript-works-writing-modular-and-reusable-code-with-mvc-16c65cbd9f64
      
 
             
