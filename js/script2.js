@@ -1,7 +1,7 @@
 //GAME OPENS WITH FORM FOR USER TO ENTER USERNAME AND CHOOSE A SIDE
 //buttons have event listeners to call startGame function. 
 const userInput = document.querySelector("#opener-input")
-const startBtn = document.querySelectorAll(".opener-btn")
+const startBtn = document.querySelectorAll(".opener-btn1, .opener-btn2")
 const startGameWindow = document.querySelector("#start-game")
 const messageContainer = document.querySelector(".gameboard-display")
 

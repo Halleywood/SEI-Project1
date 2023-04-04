@@ -69,10 +69,18 @@ class Board {
             })
         })
     }
+    //if it is the start of game, sets the initial to user active and opponent inactive. 
     //sets user turn to opposite, switches player turn indicator. 
     changeTurn() {
         if(this.spacesAvailable > 8){
-           this.displayName.classList.add('active')
+            if(this.userTurn){
+                this.displayName.classList.add('active')
+                this.opponentName.classList.remove('active')
+            }
+            else{
+                this.displayName.classList.remove('active')
+                this.opponentName.classList.add('active')
+            }
         }
         else{
             this.userTurn = !this.userTurn
