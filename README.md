@@ -33,18 +33,18 @@ Functional versus Class Based Code
      -The basic premise is to seperate how data is collected from users from how it is presented to users. It would not be as fun of a game if the user had to             click on the box and physically type their chosen character. But because we know their chosen character from the input we collected in the beginning, we can           dynamically render it on the square of their choosing with a click of a button. 
      
 ![timeline](https://user-images.githubusercontent.com/87944545/229692971-2dbb3691-4560-4661-a7ef-177d569be59e.jpg)
-##The Process 
-####Pseudocode to  Application  
+The Process 
+Pseudocode to  Application  
      * Utilized pen and paper, a dry erase board, and wireframe to write down logical steps to go from start to finish. I prioritized the JavaScript logic because            for me that was going to be the hardest, and because the logic is the backbone to the game. None of the Bronze MVP tasks could be completed without the game            logic. 
      * I got the logic working, then built a skeleton of a website to make a clickeable prototype. Once I had all of the game logic down I could add more complex              features. 
-######WireFrame to Application  
+WireFrame to Application  
        Wire Frame 
        Skeleton
         ![wireframe](https://user-images.githubusercontent.com/87944545/229692302-6307d3da-ec00-43a9-8c10-49650e50f35b.jpg)
         ![mobileresponsive](https://user-images.githubusercontent.com/87944545/229692871-7d68c9d5-2374-4cde-895f-43f92b49f19f.jpg)
         ![screenshot](https://user-images.githubusercontent.com/87944545/229692960-c6c55bff-187a-4ec4-adc8-cf08bcd763c0.jpg)
         
-        *Full Website
+        Full Website
         [My Deployed Application](https://halleywood.github.io/SEI-Project1/)
         
         MVP --> 
@@ -63,6 +63,6 @@ Functional versus Class Based Code
             *there is a dark/light theme 
             *have a website accessible to visually impared, for a user to be able to tabulate over gameboard
 
-######1. What I plan to do in the future/ How I would change it 
-######2. Instructions on how to download and play on your own machine
-######3. Sources 
+1. What I plan to do in the future/ How I would change it 
+2. Instructions on how to download and play on your own machine
+3. Sources 
