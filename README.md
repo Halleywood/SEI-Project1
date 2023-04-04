@@ -44,10 +44,11 @@ WireFrame to Application
         ![mobileresponsive](https://user-images.githubusercontent.com/87944545/229692871-7d68c9d5-2374-4cde-895f-43f92b49f19f.jpg)
         ![screenshot](https://user-images.githubusercontent.com/87944545/229692960-c6c55bff-187a-4ec4-adc8-cf08bcd763c0.jpg)
         
-        Full Website
+            
         [My Deployed Application](https://halleywood.github.io/SEI-Project1/)
+
         
-        MVP --> 
+        MVP 
         🥉 Bronze MVP 
             *a user can click on a box and an X or O will appear 
             *two users play against eachother dynamically 
