@@ -41,12 +41,14 @@ WireFrame to Application
        Wire Frame 
        Skeleton
         ![wireframe](https://user-images.githubusercontent.com/87944545/229692302-6307d3da-ec00-43a9-8c10-49650e50f35b.jpg)
-        ![mobileresponsive](https://user-images.githubusercontent.com/87944545/229692871-7d68c9d5-2374-4cde-895f-43f92b49f19f.jpg)
-        ![screenshot](https://user-images.githubusercontent.com/87944545/229692960-c6c55bff-187a-4ec4-adc8-cf08bcd763c0.jpg)
         
+        ![mobileresponsive](https://user-images.githubusercontent.com/87944545/229692871-7d68c9d5-2374-4cde-895f-43f92b49f19f.jpg)
+        
+        ![screenshot](https://user-images.githubusercontent.com/87944545/229692960-c6c55bff-187a-4ec4-adc8-cf08bcd763c0.jpg)
             
         [My Deployed Application](https://halleywood.github.io/SEI-Project1/)
-
+        Full Website
+        https://halleywood.github.io/SEI-Project1/
         
         MVP 
         🥉 Bronze MVP 
