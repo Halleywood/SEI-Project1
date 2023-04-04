@@ -51,9 +51,9 @@
 
 ![screenshot](https://user-images.githubusercontent.com/87944545/229692960-c6c55bff-187a-4ec4-adc8-cf08bcd763c0.jpg)
 [My Deployed Application](https://halleywood.github.io/SEI-Project1/)
-######1. What I plan to do in the future/ How I would change it 
-######2. Instructions on how to download and play on your own machine
-######3. Sources 
+1. What I plan to do in the future/ How I would change it 
+2. Instructions on how to download and play on your own machine
+3. Sources 
 
      
 
