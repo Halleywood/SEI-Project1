@@ -1,5 +1,5 @@
 # Tic-Tac-Toe Front-End Application 
-(![screenshot](https://user-images.githubusercontent.com/87944545/229684356-24c0e42e-d8c4-4cd1-bc4f-7689ea26a1be.jpg) "Visual of the game played on a browser")
+(![screenshot](https://user-images.githubusercontent.com/87944545/229684356-24c0e42e-d8c4-4cd1-bc4f-7689ea26a1be.jpg "Visual of the game played on a browser")
 
 * 🔴 Users can customize their names and choose their playing icon 
 * 🟠 Play unlimited games without having to refresh the browswer 
