@@ -28,25 +28,26 @@
 * **Model View Seperation**
             -The basic premise is to seperate how data is collected from users from how it is presented to users. It would not be as fun of a game if the user had to click on the box and physically type their chosen character. But because we know their chosen character from the input we collected in the beginning, we can dynamically render it on the square of their choosing with a click of a button. 
 
-3. The Process 
-    **Pseudocode ----> Application**
-    **WireFrame  -----> Skeleton ------> Full Website**
+### 3. **The Process** 
+**Pseudocode ----> Application**
+**WireFrame  -----> Skeleton ------> Full Website**
     ![wireframe](https://user-images.githubusercontent.com/87944545/229692302-6307d3da-ec00-43a9-8c10-49650e50f35b.jpg)
     ![mobileresponsive](https://user-images.githubusercontent.com/87944545/229692871-7d68c9d5-2374-4cde-895f-43f92b49f19f.jpg)
-* 🥉 Bronze MVP 
-            *a user can click on a box and an X or O will appear 
-            *two users play against eachother dynamically 
-            *a winner or draw can be determine and the game has a clear end 
-            *Once an ending has been met, the user has the option to play again 
-            *two users can keep track of their scores 
-* 🥈 Silver MVP 
-            *The game is web responsive 
-            *Players enter their names to start game 
-            *A user can choose which team they want to be 
-            *The game has animations 
-* 🥇 Gold MVP
-            *there is a dark/light theme 
-            *have a website accessible to visually impared, for a user to be able to tabulate over gameboard
+
+#### * 🥉 **Bronze MVP** 
+    1. a user can click on a box and an X or O will appear 
+    2. two users play against eachother dynamically 
+    3. a winner or draw can be determine and the game has a clear end 
+    4. Once an ending has been met, the user has the option to play again 
+    5. two users can keep track of their scores 
+#### * 🥈 **Silver MVP**
+    1. The game is web responsive 
+    2. Players enter their names to start game 
+    3. A user can choose which team they want to be 
+    4. The game has animations 
+#### * 🥇 **Gold MVP**
+    1. there is a dark/light theme 
+    2. have a website accessible to visually impared, for a user to be able to tabulate over gameboard
 
 
 ![screenshot](https://user-images.githubusercontent.com/87944545/229692960-c6c55bff-187a-4ec4-adc8-cf08bcd763c0.jpg)
