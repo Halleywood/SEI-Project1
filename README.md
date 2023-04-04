@@ -40,32 +40,10 @@ Pseudocode to  Application
 WireFrame to Application  
        Wire Frame 
        Skeleton
-        ![wireframe](https://user-images.githubusercontent.com/87944545/229692302-6307d3da-ec00-43a9-8c10-49650e50f35b.jpg)
-        
-        ![mobileresponsive](https://user-images.githubusercontent.com/87944545/229692871-7d68c9d5-2374-4cde-895f-43f92b49f19f.jpg)
-        
-        ![screenshot](https://user-images.githubusercontent.com/87944545/229692960-c6c55bff-187a-4ec4-adc8-cf08bcd763c0.jpg)
+![wireframe](https://user-images.githubusercontent.com/87944545/229692302-6307d3da-ec00-43a9-8c10-49650e50f35b.jpg)
+![mobileresponsive](https://user-images.githubusercontent.com/87944545/229692871-7d68c9d5-2374-4cde-895f-43f92b49f19f.jpg)
+![screenshot](https://user-images.githubusercontent.com/87944545/229692960-c6c55bff-187a-4ec4-adc8-cf08bcd763c0.jpg)
             
         [My Deployed Application](https://halleywood.github.io/SEI-Project1/)
-        Full Website
-        https://halleywood.github.io/SEI-Project1/
         
-        MVP 
-        🥉 Bronze MVP 
-            *a user can click on a box and an X or O will appear 
-            *two users play against eachother dynamically 
-            *a winner or draw can be determine and the game has a clear end 
-            *Once an ending has been met, the user has the option to play again 
-            *two users can keep track of their scores 
-         🥈 Silver MVP 
-            *The game is web responsive 
-            *Players enter their names to start game 
-            *A user can choose which team they want to be 
-            *The game has animations 
-         🥇 Gold MVP
-            *there is a dark/light theme 
-            *have a website accessible to visually impared, for a user to be able to tabulate over gameboard
-
-1. What I plan to do in the future/ How I would change it 
-2. Instructions on how to download and play on your own machine
-3. Sources 
+       
